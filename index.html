@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl font-extrabold flex items-center justify-center mt-10">Score Board</h1>
+        <br>
+    </header>
+
+    <main>
+        <!-- player name -->
+
+        <div class="flex justify-between container mx-auto">
+
+            <h3 id="player-container" class="text-xl w-3/4 mx-auto flex gap-2">1.
+            </h3>
+
+            <div class="flex gap-2">
+                <!-- player name -->
+                <input id="player-name" type="text" class="p-2 border rounded-lg" placeholder="type a player name">
+
+                <button id="btn-player" onclick="playerAddBtn()" id="addPlayer" class="btn" disabled>Add
+                    Player</button>
+                <!-- out -->
+                <button id="btn-out" onclick="playerOut()" id="addPlayer"
+                    class="btn bg-red-700 text-white font-semibold text-lg hidden">Out</button>
+            </div>
+        </div>
+
+
+
+        <!-- total runs -->
+        <div>
+            <h2 class="text-center text-2xl font-semibold">Total Runs: <span id="total-runs">0</span></h2>
+        </div>
+
+
+        <div class="mt-10  w-1/2 mx-auto">
+            <div class="w-1/2 mx-auto">
+                <input id="input-run" class="p-2" type="number" placeholder="type runs">
+                <button id="addRuns-btn" onclick="addRunsBtn()" class="btn" disabled>Add Runs</button>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
